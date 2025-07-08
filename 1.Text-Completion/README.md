@@ -246,17 +246,3 @@ Here are a variety of example prompts designed to showcase the power of text com
 4. **Analytics**: Log and analyze completions for user feedback and optimization.
 
 ---
-
-## 📖 Resources
-
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- [Azure OpenAI Service Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
-- [Text Completion Use Cases](https://platform.openai.com/examples/)
-
----
-
-Happy building! 🚀 😊
-
-```
-
-```

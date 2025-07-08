@@ -1,4 +1,4 @@
-from app.models import Message
+from api.models import Message
 
 def format_prompt(messages: list[Message]) -> list:
     """

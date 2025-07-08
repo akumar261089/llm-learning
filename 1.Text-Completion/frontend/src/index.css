@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom slider styles for each theme */
+.slider-warm-amber::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d97706, #ea580c);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-warm-amber::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #b45309, #c2410c);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
+.slider-forest-sage::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #047857, #059669);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(4, 120, 87, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-forest-sage::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #065f46, #047857);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.4);
+}
+
+.slider-midnight-ink::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #4338ca);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-midnight-ink::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #3730a3);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.slider-lavender-mist::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-lavender-mist::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+}
+
+.slider-ocean-breeze::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #0891b2);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-ocean-breeze::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #0e7490);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.slider-sunset-rose::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e11d48, #ec4899);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-sunset-rose::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #be185d, #db2777);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.4);
+}
+
+/* Track styles remain simple */
+.slider::-webkit-slider-track {
+  height: 8px;
+  border-radius: 4px;
+  background: #e2e8f0;
+}
+
+/* Firefox styles */
+.slider-warm-amber::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d97706, #ea580c);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.slider-warm-amber::-moz-range-thumb:hover {
+  background: linear-gradient(135deg, #b45309, #c2410c);
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-track {
+  height: 8px;
+  border-radius: 4px;
+  background: #e2e8f0;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

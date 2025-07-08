@@ -1,0 +1,8 @@
+# Ignore all .env files
+*.env
+
+# Ignore pycache directories at any level
+**/__pycache__/
+
+# Ignore pytest cache directories
+.pytest_cache/

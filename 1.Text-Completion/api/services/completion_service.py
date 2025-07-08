@@ -1,13 +1,13 @@
 import httpx
 from fastapi import HTTPException
-from app.models import LLMRequest
-from app.config import (
+from api.models import LLMRequest
+from api.config import (
     AZURE_OPENAI_ENDPOINT,
     AZURE_OPENAI_DEPLOYMENT,
     AZURE_API_VERSION,
     AZURE_SUBSCRIPTION_KEY
 )
-from app.utils import format_prompt
+from api.utils import format_prompt
 
 async def get_completion(request: LLMRequest) -> str:
     """
@@ -30,6 +30,7 @@ async def get_completion(request: LLMRequest) -> str:
         "top_p": request.top_p,
     }
 
+
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(url, json=payload, headers=headers)
@@ -39,6 +40,7 @@ async def get_completion(request: LLMRequest) -> str:
             completion = data.get("choices", [{}])[0].get("message", {}).get("content", "")
             if not completion:
                 raise HTTPException(status_code=500, detail="Completion is empty.")
+            print(f"Completion: {completion}")
             return completion
     except httpx.HTTPStatusError as err:
         raise HTTPException(
