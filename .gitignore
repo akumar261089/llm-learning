@@ -6,3 +6,6 @@
 
 # Ignore pytest cache directories
 .pytest_cache/
+
+# ignorecetail directories
+**/ignore-*/
